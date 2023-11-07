@@ -1,0 +1,70 @@
+
+<ion-content [fullscreen]="true">
+
+  <swiper-container>
+
+    <swiper-slide>
+      <div class="ContainerLogo">
+        <ion-img class="Logo centered-image" src="assets/img/utpp.png"></ion-img>
+      </div>
+      <form (ngSubmit)="login()">
+      <div class="inputsPos">
+        <ion-label>Usuario:</ion-label>
+        <ion-item class="inputs">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-input type="text" id="username" name="username" [(ngModel)]="username"></ion-input>
+        </ion-item><br>
+        <ion-label>Contraseña:</ion-label>
+        <ion-item class="inputs">
+          <ion-icon [name]="showPassword ? 'eye-outline' : 'eye-off-outline'" (click)="togglePasswordVisibility()"></ion-icon>
+          <ion-input [type]="showPassword ? 'text' : 'password'" id="password" name="password" [(ngModel)]="password"></ion-input> 
+         </ion-item>
+      </div>
+      <br>
+      <div class="botonLog">
+        <button (click)="login()" type="submit" class="btnLogin">Iniciar Sesión <ion-icon class="iconLog" name="arrow-forward-outline"> </ion-icon></button>
+      </div>
+    </form>
+    </swiper-slide>
+
+    <swiper-slide>      
+
+      <div class="feria_proyectos">
+        <h1>Feria de Proyectos</h1>
+        <h2>Carreras y Categorías</h2>
+      </div>
+
+      <ion-list lines="full">
+
+        <ion-item button (click)="toggleSection(1)" detail="false" class="custom-list-item">
+          <ion-label>Tecnologías de la Información</ion-label>
+        </ion-item>
+        <ion-item *ngIf="isSectionShown(1)">
+          Categoría 1
+        </ion-item>
+        <ion-item *ngIf="isSectionShown(1)">
+          Categoría 2
+        </ion-item>
+        <ion-item *ngIf="isSectionShown(1)">
+          Categoría 3
+        </ion-item>
+      
+        <ion-item button (click)="toggleSection(2)" detail="false" class="custom-list-item">
+          <ion-label>Mecatronica</ion-label>
+        </ion-item>
+        <ion-item *ngIf="isSectionShown(2)">
+          Categoría 1
+        </ion-item>
+        <ion-item *ngIf="isSectionShown(2)">
+          Categoría 2
+        </ion-item>
+      
+      </ion-list>
+      
+
+    </swiper-slide>
+
+  </swiper-container>
+</ion-content>
+
+

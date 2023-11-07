@@ -1,0 +1,26 @@
+ion-toolbar{
+    --ion-background-color: var(--ion-color-verde);
+    color: white;
+}
+
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    --ion-background-color: #ECF0F5;
+  }
+  
+ion-button {
+    position: relative;    
+    top: 26%;
+    height: 20%;
+    margin: 10px;
+    max-width: 300px;
+    width: 50%;
+    text-align: center; 
+    font-weight: bold;
+    --background: #00A65A;
+}
+  

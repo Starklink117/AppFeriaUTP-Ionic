@@ -1,0 +1,7 @@
+{
+  "name": "Feria UTP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Proyectos Inscritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Proyectos Inscritos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+    <div class="container">
+      <ion-text>
+        <h3>Consulta de Proyectos</h3>
+      </ion-text>
+
+      <ion-list>
+          <ion-select placeholder="Seleccione...">
+            <div slot="label">Del Mes de</div>
+            <ion-select-option value="Enero">Enero</ion-select-option>
+            <ion-select-option value="Febrero">Abril</ion-select-option>
+            <ion-select-option value="Marzo">Marzo</ion-select-option>
+          </ion-select>
+          <ion-select placeholder="Seleccione...">
+            <div slot="label">Al Mes de</div>
+            <ion-select-option value="Enero">Enero</ion-select-option>
+            <ion-select-option value="Febrero">Abril</ion-select-option>
+            <ion-select-option value="Marzo">Marzo</ion-select-option>
+          </ion-select>
+          <ion-select placeholder="Seleccione...">
+            <div slot="label">Del Año</div>
+            <ion-select-option value="2020">2020</ion-select-option>
+            <ion-select-option value="2021">2021</ion-select-option>
+            <ion-select-option value="2022">2022</ion-select-option>
+            <ion-select-option value="2023">2023</ion-select-option>
+          </ion-select>
+          <ion-select placeholder="Seleccione...">
+            <div slot="label">División</div>
+            <ion-select-option value="tics">Tecnologías de la Información</ion-select-option>
+            <ion-select-option value="2021">Administración</ion-select-option>
+            <ion-select-option value="2022">Gastronomía</ion-select-option>
+            <ion-select-option value="2023">Energías Renovables</ion-select-option>
+          </ion-select>
+      </ion-list>
+
+      
+      <ion-button >
+        <ion-icon name="search-circle-outline" slot="start"></ion-icon>
+        Consultar
+      </ion-button>
+    </div>
+
+
+</ion-content>

@@ -1,0 +1,205 @@
+
+  ion-content{
+    --background: url('/assets/img/fondo1.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: transparent; /* Opcional: para hacer el fondo transparente */
+    font-family: "Open Sans", sans-serif;
+}
+
+swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+swiper-slide img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+
+
+.Logo{
+    height: 130px; 
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+.btnLogin{
+    text-align: left;
+    width: 100%;
+    background-color: rgb(11,150,36);
+    color: white;
+    border-radius: 60px;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.botonLog{
+    position: relative;
+}
+
+.botonLog ion-item{
+    --ion-background-color: white;
+    height: 50px;
+}
+
+
+.iconLog{
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    position: absolute;
+    height: 65.4%;
+    width: 100%;
+    top: 60%;
+    transform: translateY(-39%);
+    background-color: white;
+    border-radius: 10% 10% 0% 0%;
+    padding: 10%;
+}
+
+
+.container ion-label{
+    text-align: left;
+    font-weight: bold;
+}
+
+.inputs{
+    --ion-background-color: white;
+    border-radius: 10px;
+    border: solid 1px rgb(122,163,181);
+}
+
+h1{
+    color: rgb(66,147,143);
+    font-size: 32px;
+    font-weight: 600;
+}
+.feria_proyectos{
+    display: block;
+    line-height:1.5;
+    margin-bottom: 53px;
+}
+
+h2{
+    color: rgb(68,68,68);
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.custom-list-item {
+    --border-radius: 10px; /* Ajusta el valor según el radio de los bordes que desees */
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+  }
+
+.list-ios{
+    background-color: transparent;
+}
+
+.item-native{
+    background-color: transparent;
+    --ion-background-color: trans;
+
+}
+
+ion-item{
+    --ion-background-color:  rgb(203, 234, 232);
+}
+
+
+/*ion-toolbar{
+    background-color: rgb(234,225,218);
+}
+
+ion-content{
+    --ion-background-color: var(--ion-color-verde);
+}
+*/
+/*
+ion-content ion-img{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 25%;
+    width: 100%;
+}
+
+.ContainerLogo {
+    max-height: 80vh; 
+  }
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+
+.Logo{
+    height: 150px; 
+    width: 150px;
+}
+
+.btnLogin{
+    text-align: left;
+    width: 100%;
+    background-color: var(--ion-color-verde);
+    color: white;
+    border-radius: 60px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.botonLog{
+    position: relative;
+}
+
+.botonLog ion-item{
+    --ion-background-color: white;
+    height: 50px;
+}
+
+.iconLog{
+    position: relative;
+    left: 20%;
+}
+
+.container{
+    position: absolute;
+    height: 65.4%;
+    width: 100%;
+    top: 60%;
+    transform: translateY(-39%);
+    background-color: white;
+    border-radius: 10% 10% 0% 0%;
+    padding: 10%;
+}
+
+
+.container ion-label{
+    text-align: left;
+    font-weight: bold;
+}
+
+.inputs{
+    --ion-background-color: white;
+    border-radius: 10px;
+    border: solid 1px rgb(122,163,181);
+}
+
+  */

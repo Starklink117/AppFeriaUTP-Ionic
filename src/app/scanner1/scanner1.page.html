@@ -1,0 +1,47 @@
+<ion-content>
+ 
+  <ion-card>
+    <ion-card-content>
+      
+      <form [formGroup]="formGroup">
+              
+        <!--AqQUI ESTÁ EL BOTÓN-->
+        <ion-button
+          expand="block"
+          (click)="startScan()"
+          [disabled]="!isSupported"
+          >Start Scan</ion-button
+        >
+        <ion-button
+          expand="block"
+          (click)="buscar()"
+          >Start Scan</ion-button
+        >
+       
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+  <ng-container *ngFor="let barcode of barcodes">
+    <ion-item>
+      <ion-label *ngIf="mostrarBoton"> Proyecto<br>{{ barcode.displayValue }}</ion-label>      
+    </ion-item>
+  </ng-container>
+    <ng-container *ngFor="let d of data; let i = index">
+      <ion-card>
+        <ion-card-content>            
+          <ion-item>
+            <ion-label> <br>{{ d.descripcion }}</ion-label>
+            <ion-select [(ngModel)]="calificaciones[i]">
+              <ion-select-option value="1">1</ion-select-option>
+              <ion-select-option value="2">2</ion-select-option>
+              <ion-select-option value="3">3</ion-select-option>
+              <ion-select-option value="4">4</ion-select-option>
+              <ion-select-option value="5">5</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>      
+    </ng-container>
+    <ion-button (click)="calcularSumaYEnviar()" *ngIf="mostrarBoton">Enviar</ion-button> 
+</ion-content>
